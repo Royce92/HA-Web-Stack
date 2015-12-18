@@ -1,0 +1,54 @@
+
+.tbl table{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+.tbl td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+    font-size: 15px;
+    width: 100px;
+    
+}
+.tbl tr{
+    background-color: #fff;
+    }
+    
+.tbl th {
+    padding-top: 12px;
+    font-family: serif;
+    font-size: 17px;
+    padding-bottom: 12px;
+    font-weight: inherit;
+    padding-left: 8px;
+
+    background-color: #4CAF50;
+    border: 1px solid #ddd;
+    text-align: left;
+    width: 45px;
+    color: white;
+    }    
+
+.idx h2{
+       padding-top: 12px;
+    font-family: serif;
+    font-size: 17px;
+    padding-bottom: 12px;
+    font-weight: inherit;
+    padding-left: 8px;
+
+    background-color: #4CAF50;
+    border: 1px solid #ddd;
+    text-align: left;
+    width: auto;
+    color: white;
+    
+}
+
+
+    
+    
+}
