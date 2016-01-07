@@ -1,0 +1,39 @@
+<html>
+    
+    <link rel='stylesheet' href='/views/main.css' type='text/css'><div class='menu'>
+    <ul>
+        <li>
+            <a href='index.php'>Home</a>
+        </li>
+
+        <li class='active'>
+            <a href='index.php?page=add'>Departments</a>
+        </li>
+				<li>
+            <a href='index.php?page=add'>Add Employee</a>
+        </li>
+    </ul>
+<h2>Select Department</h2>
+</div>
+</div>
+
+
+<body>
+    <div class= "selector">
+        <img src='views/images/guy.png'>
+       <form action="index.php?page=departments" method="post">
+    <select size='1' name='departments'>
+	    <?php require "config/sql.php"; 
+    $data = $conn->query("SELECT * FROM departments");
+        foreach($data as $row) {
+    print_r($row);
+    echo "<option value='$row[dept_name]' >$row[dept_name]</option>";
+    }
+?>
+</select>   <input type='image' src='views/images/button.png' border='0' alt='Submit' />
+
+</div>
+
+</body>
+<footer><p>© 2015 Jeffrey Batista</p></footer>
+</html>
