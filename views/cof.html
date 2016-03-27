@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>Stack Configuration</title>
+ 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+</style>
+
+</head>
+
+<body>
+<link rel='stylesheet' href='/views/main.css' type='text/css'><div class='menu'>
+    <ul>
+        <li>
+            <a href='index.php'>Home</a>
+        </li>
+
+        <li class='active'>
+            <a href='#'>Login</a>
+        </li>
+			
+    </ul>
+	
+<h2>GlusterFs Configuration</h2>
+</div>
+
+
+<form id="myForm" method ="POST" action="index.php?page=HAproxy">
+	<br>
+	<p>Server 1 </p>
+	 Hostname<br>
+ <input type="text" value= "server1" name="hostname"><br>
+  IP address<br>
+ <input type="text" name="IP"><br>
+Password<br>
+ <input type="password" name="password"><br>
+  Local IP address<br>
+ <input type="text" name="local_IP"><br>
+  Storage Directory<br>
+ <input type="text" value="/var/gluster/www" name="storage"><br>
+  Volume Type<br>
+
+<input TYPE="Checkbox" Name="Volume_Type" Value ="Distributed">Distributed </input>
+<input TYPE="Checkbox" Name= "Volume_Type" Value ="Replicated">Replicated </input>
+<input TYPE="Checkbox" Name= "Volume_Type" Value ="Striped">Striped  </input>
+<br>
+  Web Server<br>
+<input TYPE="Checkbox" Name="Web_Server" Value ="Nginx">Nginx </input>
+<input TYPE="Checkbox" Name= "Web_Server" Value ="Apache">Apache </input>
+<input TYPE="Checkbox" Name= "Web_Server" Value ="Other">None</input>
+<br>
+  
+<p>Server 2 </p>
+    IP address<br>
+ <input type="text" name="IP2"><br>
+	Local IP address<br>
+ <input type="text" name="local_IP2"><br>
+<p>Database Server </p>
+    IP address<br>
+ <input type="text" name="#"><br>
+    Password<br>
+ <input type="password" name="#"><br>
+<input TYPE="Checkbox" Name="Database" Value ="Nginx">MySql </input>
+<input TYPE="Checkbox" Name= "Database" Value ="Apache">MongoDB </input>
+<input TYPE="Checkbox" Name= "Database" Value ="Apache">MariaDB </input>
+<input TYPE="Checkbox" Name= "Database" Value ="Postgresql">Postgresql</input>
+<input TYPE="Checkbox" Name= "Database" Value ="None">Nones</input>
+
+<br>
+  <input type="button" onclick="myFunction()" value="Install">
+</form>
+
+<script>
+function myFunction() {
+    document.getElementById("myForm").submit();
+}
+</script>
+
+
+
+
+</body>
+</html>

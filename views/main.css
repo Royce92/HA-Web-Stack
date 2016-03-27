@@ -1,13 +1,153 @@
+.first {
+}
+.first table{ 
+font-family: sans-serif;
+    border-collapse: collapse;
+    width: 20%;
+    /* float: left; */
+}
 
-.tbl table{
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+.first td {
+    text-align: center;
+    float: left;
+    font-size: 15px;
+    /* width: 100px; */ 
+}
+
+.last {
+    float: right;
+    margin-top:-1%;
+    width: 80%;
+    
+    
+}
+.last table{ 
+font-family: sans-serif;
+    border-collapse: collapse;
+    width: 20%;
+    position: absolute;
+    /* float: left; */
+}
+
+
+.last td {
+    text-align: center;
+    /* padding: 8px; */
+    /* float: left; */
+    font-size: 15px;
+    /* width: 100px; */ 
+}
+
+
+
+
+.ea {
+    float: right;
+    margin-top: -31px;
+    width: 20%;
+    
+    
+}
+.ea table{ 
+font-family: sans-serif;
+    border-collapse: collapse;
+    width: 20%;
+    position: absolute;
+    /* float: left; */
+}
+
+
+.ea td {
+    text-align: center;
+    /* padding: 8px; */
+    /* float: left; */
+    font-size: 15px;
+    /* width: 100px; */ 
+}
+
+.ds {
+    float: right;
+    margin-top: -31px;
+    margin-right: 40%;
+    
+    
+}
+.ds table{ 
+font-family: sans-serif;
+    border-collapse: collapse;
+    width: 20%;
+    position: absolute;
+    /* float: left; */
+}
+
+
+.ds td {
+    text-align: center;
+    /* padding: 8px; */
+    /* float: left; */
+    font-size: 15px;
+    /* width: 100px; */ 
+}
+
+
+.as {
+    float: right;
+    margin-top: -31px;
+    margin-right: 60%;
+    
+    
+}
+.as table{ 
+font-family: sans-serif;
+    border-collapse: collapse;
+    width: 20%;
+    position: absolute;
+    /* float: left; */
+}
+
+
+.as td {
+    text-align: center;
+    /* padding: 8px; */
+    /* float: left; */
+    font-size: 15px;
+    /* width: 100px; */ 
+}
+
+.selector img {
+    float: left;
+    margin-top: 86px;
+    margin-left: -242px;
+    
+    
+}
+
+.selector form select{
+    
+        margin-top: 116px;
+    margin-left: -227px;
+    position: absolute;
+    
+}
+
+.selector form input {
+width: 46px;
+    margin-top: 214px;
+    margin-left: -56px;
+    
+}
+
+.tbl table{ 
+    font-family: sans-serif;
     border-collapse: collapse;
     width: 100%;
-
+    float: left;
 }
+
+
 .tbl td {
-    border: 1px solid #ddd;
-    text-align: left;
+    text-align: center;
     padding: 8px;
     font-size: 15px;
     width: 100px;
@@ -19,29 +159,51 @@
     
 .tbl th {
     padding-top: 12px;
-    font-family: serif;
-    font-size: 17px;
     padding-bottom: 12px;
-    font-weight: inherit;
-    padding-left: 8px;
-
-    background-color: #4CAF50;
+    background-color: #1A9D35;
     border: 1px solid #ddd;
-    text-align: left;
-    width: 45px;
     color: white;
+    font-family: serif;
+    font-size: 20px;
+    font-weight: inherit;
+    padding-left: 8px;    
+    width: 45px;
+    
     }    
 
-.idx h2{
-       padding-top: 12px;
+.head table{ 
+    font-family: sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    float: left;
+}
+
+    
+.head th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #1A9D35;
+    border: 1px solid #ddd;
+    color: white;
     font-family: serif;
-    font-size: 17px;
+    font-size: 20px;
+    font-weight: inherit;
+    padding-left: 8px;    
+    width: 20%;
+}
+
+
+
+.menu h2{
+    padding-top: 11px;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 26px;
+    margin-top: 1px;
     padding-bottom: 12px;
     font-weight: inherit;
     padding-left: 8px;
-
-    background-color: #4CAF50;
-    border: 1px solid #ddd;
+    background-color: #1A9D35;
     text-align: left;
     width: auto;
     color: white;
@@ -49,6 +211,98 @@
 }
 
 
-    
-    
+.menu, .menu ul, .menu ul li, .menu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
 }
+.menu {
+  width: auto;
+  height: 59px;
+  padding-bottom: 4px;
+}
+.menu.align-right {
+  float: right;
+}
+.menu.align-right ul li {
+  float: right;
+  margin-right: 0;
+  margin-left: 4px;
+}
+.menu.align-right ul li:first-child, .menu.align-right ul li:first-child > a {
+  border-bottom-right-radius: 3px;
+}
+.menu #bg-one, .menu #bg-two, .menu #bg-three, .menu #bg-four {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.menu {
+  height: 10px;
+  background: #0f71ba;
+}
+.menu {
+  height: 59px;
+  z-index: 2;
+}
+.menu {
+  bottom: 4px;
+  height: 55px;
+  z-index: 3;
+  background: #222222;
+  background: -moz-linear-gradient(top, #555555 0%, #222222 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1A9D35), color-stop(100%, #222222));
+  background: -webkit-linear-gradient(top, #555555 0%, #222222 100%);
+  background: -o-linear-gradient(top, #555555 0%, #222222 100%);
+  background: -ms-linear-gradient(top, #555555 0%, #222222 100%);
+  background: linear-gradient(to bottom, #555555 0%, #222222 100%);
+}
+.menu #bg-four {
+  bottom: 4px;
+  height: 55px;
+  z-index: 4;
+}
+.menu ul {
+  height: 59px;
+  border-bottom: 5px solid #1A9D35;
+}
+.menu ul li {
+  float: left;
+  margin-right: 4px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  z-index: 5;
+}
+.menu ul li a {
+  padding: 24px 30px 20px 30px;
+  margin-bottom: 4px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  color: #eeeeee;
+  font-size: 15px;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+.menu ul li:first-child, .menu ul li:first-child > a {
+  border-bottom-left-radius: 3px;
+}
+.menu ul li:hover, .menu ul li.active {
+  background: #1A9D35;
+  background: -moz-linear-gradient(top, #1A9D35 0%, #1A9D35 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1A9D35), color-stop(100%, #1A9D35));
+  background: -webkit-linear-gradient(top, #1A9D35 0%, #1A9D35 100%);
+  background: -o-linear-gradient(top, #1A9D35 0%, #1A9D35 100%);
+  background: -ms-linear-gradient(top, #1A9D35 0%, #1A9D35 100%);
+  background: linear-gradient(to bottom, #1A9D35 0%, #1A9D35 100%);
+}
+.menu ul li a:hover, .menu ul li.active > a {
+  color: #ffffff;
+  font-family: sans-serif;
+}}

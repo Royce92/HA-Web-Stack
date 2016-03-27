@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Stack Configuration</title>
+ 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<form id="myForm" method ="POST" action="index.php?page=install">
+	<br>
+<input type="hidden" value="2" name="counter" />
+<input type="text" value= "104.238.134.50"  name="server[1][ip]" />
+<input type="text" value= "server1"  name="hostname1" />
+<input type="text" value= "10.99.0.11"  name="local1" />
+<input type="hidden" value= "a7505489"  name="server[1][password]" />
+<input type="text" value= "server2"  name="hostname2" />
+<input type="text" value= "107.191.43.18"   name="server[2][ip]" />
+<input type="text" value= "10.99.0.10"  name="local2" />
+
+<input type="hidden" value= "a7505489"  name="server[2][password]" />
+<br>
+  <input type="button" onclick="myFunction()" value="Install">
+</form>
+
+<script>
+function myFunction() {
+    document.getElementById("myForm").submit();
+}
+</script>
+
+
+
+
+</body>
+</html>
